@@ -1,4 +1,3 @@
---2. Создать `dim_region`, `dim_department`, `dim_school`, `dim_group`, `dim_student`, `dim_subject`.
 create schema if not exists dwh;
 
 -- 1 регионы
