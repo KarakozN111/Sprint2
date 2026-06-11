@@ -71,7 +71,7 @@
         then round((ad.passing_marks_count::numeric / ad.total_marks_count::numeric) * 100, 2)
         else 0
     end as passing_rate_pct
-```
+  ```
 
 ---
 
