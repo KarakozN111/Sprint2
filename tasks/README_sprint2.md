@@ -65,6 +65,13 @@
 
 * **Процент успеваемости (доля успевающих учеников):**
     $$Passing\ Rate\ \% = \frac{Passing\ Students\ Count\ (оценки\ 3,\ 4\ and\ 5)}{Total\ Graded\ Students} \times 100$$
+  ```sql
+      case
+        when ad.total_marks_count > 0
+        then round((ad.passing_marks_count::numeric / ad.total_marks_count::numeric) * 100, 2)
+        else 0
+    end as passing_rate_pct
+```
 
 ---
 
