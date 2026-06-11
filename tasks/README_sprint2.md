@@ -53,7 +53,6 @@
 ## Ключевые бизнес формулы витрины
 
 * **Процент качества знаний:**
-    $$Quality\ of\ Knowledge\ \% = \frac{Quality\ Students\ Count\ (оценки\ 4\ and\ 5)}{Total\ Graded\ Students} \times 100$$
   ```sql
   case
         when ad.total_marks_count > 0
@@ -64,7 +63,6 @@
   
 
 * **Процент успеваемости (доля успевающих учеников):**
-    $$Passing\ Rate\ \% = \frac{Passing\ Students\ Count\ (оценки\ 3,\ 4\ and\ 5)}{Total\ Graded\ Students} \times 100$$
   ```sql
       case
         when ad.total_marks_count > 0
